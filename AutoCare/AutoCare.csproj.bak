@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1207EB9B-BA69-4FEC-B1D9-3B98CB4EF05B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoCare</RootNamespace>
+    <AssemblyName>AutoCare</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v20.2" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.2.UI, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Diagram.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.2.Drawing, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Extensions, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v20.2.Wizard, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2.CodeCompletion, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCenterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AutoCenterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BillItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillItems.Designer.cs">
+      <DependentUpon>BillItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerItem.Designer.cs">
+      <DependentUpon>customerItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsContainSubstring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsContainSubstring.Designer.cs">
+      <DependentUpon>ItemsContainSubstring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\Car.cs" />
+    <Compile Include="models\CenterContext.cs" />
+    <Compile Include="models\Client.cs" />
+    <Compile Include="models\ClientBill.cs" />
+    <Compile Include="models\ClientBillItem.cs" />
+    <Compile Include="models\Item.cs" />
+    <Compile Include="models\Supplier.cs" />
+    <Compile Include="models\SupplierBill.cs" />
+    <Compile Include="models\SupplierBillItem.cs" />
+    <Compile Include="models\Worker.cs" />
+    <Compile Include="models\WorkerAdvancePayment.cs" />
+    <Compile Include="NewItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewItemForm.Designer.cs">
+      <DependentUpon>NewItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="models\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucClients.Designer.cs">
+      <DependentUpon>ucClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDisplayBills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDisplayBills.Designer.cs">
+      <DependentUpon>ucDisplayBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRepository.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRepository.Designer.cs">
+      <DependentUpon>ucRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSuppliers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSuppliers.Designer.cs">
+      <DependentUpon>ucSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSuppliesBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSuppliesBill.Designer.cs">
+      <DependentUpon>ucSuppliesBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucWorkers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWorkers.Designer.cs">
+      <DependentUpon>ucWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMaintenanceBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMaintenanceBill.Designer.cs">
+      <DependentUpon>ucMaintenanceBill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BillItems.resx">
+      <DependentUpon>BillItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerItem.resx">
+      <DependentUpon>customerItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsContainSubstring.resx">
+      <DependentUpon>ItemsContainSubstring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewItemForm.resx">
+      <DependentUpon>NewItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="models\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucClients.resx">
+      <DependentUpon>ucClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDisplayBills.resx">
+      <DependentUpon>ucDisplayBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMaintenanceBill.resx">
+      <DependentUpon>ucMaintenanceBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRepository.resx">
+      <DependentUpon>ucRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSuppliers.resx">
+      <DependentUpon>ucSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSuppliesBill.resx">
+      <DependentUpon>ucSuppliesBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWorkers.resx">
+      <DependentUpon>ucWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="AutoCenterDataSet.xsc">
+      <DependentUpon>AutoCenterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AutoCenterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AutoCenterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AutoCenterDataSet.xss">
+      <DependentUpon>AutoCenterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AutoCare.models.Supplier.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Client.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Item.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Car.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.CenterContext.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Client.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.ClientBill.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.ClientBillItem.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Item.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Supplier.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Client.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Supplier.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.SupplierBill.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.SupplierBillItem.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.Worker.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.WorkerAdvancePayment.datasource" />
+    <None Include="Properties\DataSources\AutoCare.models.XtraReport1.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
